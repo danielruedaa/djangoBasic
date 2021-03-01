@@ -1,0 +1,27 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Saludo desde la consulta</h1>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label> input 1</label>        
+        <input type="text" name="name" placeholder="Enter name">
+        
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <h3>Informacion :</h3>
+    <h3>{{data}}</h3>
+</body>
+{% endblock content %}
+</html>
