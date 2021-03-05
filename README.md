@@ -1,0 +1,2 @@
+# djangoBasic
+start django
